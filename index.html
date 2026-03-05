@@ -62,9 +62,12 @@
             gap: 20px;
             margin-top: 30px;
             padding: 0 20px;
+            justify-items: center; /* center images in each grid cell */
         }
         .gallery img {
-            width: 100%;
+            width: auto;       /* preserve original width */
+            max-width: 100%;   /* do not overflow container */
+            height: auto;      /* maintain aspect ratio */
             border-radius: 10px;
             box-shadow: 0 4px 10px rgba(0,0,0,0.2);
         }
@@ -175,7 +178,6 @@
         <p><b>Venue:</b> Aware, Uran</p>
         <p>You are warmly invited to celebrate love, joy, and togetherness with us.</p>
         <h3>Wedding Location</h3>
-        <br>
         <a href="https://www.google.com/maps?q=Aware,Uran" target="_blank" class="map-btn">Open in Google Maps</a>
     </section>
 
